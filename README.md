@@ -6,7 +6,7 @@ Welcome to the Pack Digital Schema Snippets extension for Visual Studio Code! Th
 
 1. Open Visual Studio Code.
 2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
-3. Search for "Pack Digital Schema Snippets".
+3. Search for "PackDigital Schema Snippets".
 4. Click "Install".
 
 ## Usage

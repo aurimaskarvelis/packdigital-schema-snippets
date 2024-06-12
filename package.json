@@ -1,8 +1,8 @@
 {
   "name": "packdigital-schema-snippets",
   "displayName": "PackDigital Schema Snippets",
-  "description": "Section schema API snippets, used for building sections within PackDigital x Shopify platform",
-  "version": "0.2.0",
+  "description": "Section schema API snippets, used for building sections for headless shopify themes utilising PackDigital's platform",
+  "version": "0.3.0",
   "engines": {
     "vscode": "^1.89.1"
   },
