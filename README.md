@@ -2,12 +2,6 @@
 
 Welcome to the Pack Digital Schema Snippets extension for Visual Studio Code! This extension provides handy snippets for the Pack Digital Schema, allowing you to quickly insert schema fields by typing `pack-${field name}`.
 
-## Features
-
-- **Convenient Snippets**: Insert common schema fields quickly with `pack-${field name}`.
-- **Comprehensive Coverage**: Includes snippets for all fields available in the Pack Digital Schema API.
-- **Easy to Use**: Simply start typing `pack-` followed by the field name to see available snippets.
-
 ## Installation
 
 1. Open Visual Studio Code.
@@ -17,31 +11,31 @@ Welcome to the Pack Digital Schema Snippets extension for Visual Studio Code! Th
 
 ## Usage
 
-1. Open any JSON or JavaScript file in Visual Studio Code.
+1. Open your TSX/JS schema file.
 2. Start typing `pack-` followed by the field name.
 3. Select the desired snippet from the suggestions and press `Enter`.
 
 ## Example Snippets
 
 ```markdown
-- `pack-text`
-- `pack-textarea`
-- `pack-image`
-- `pack-markdown`
-- `pack-link`
-- `pack-number`
-- `pack-product`
-- `pack-collection`
-- `pack-productbundles`
-- `pack-html`
-- `pack-group`
-- `pack-list`
-- `pack-grouplist`
-- `pack-blocks`
-- `pack-toggle`
-- `pack-select`
-- `pack-radiogroup`
-- `pack-tags`
+- pack-text
+- pack-textarea
+- pack-image
+- pack-markdown
+- pack-link
+- pack-number
+- pack-product
+- pack-collection
+- pack-productbundles
+- pack-html
+- pack-group
+- pack-list
+- pack-grouplist
+- pack-blocks
+- pack-toggle
+- pack-select
+- pack-radiogroup
+- pack-tags
 ```
 
 Each snippet will expand to a predefined schema field structure, making it easier to define Pack Digital schemas quickly.
