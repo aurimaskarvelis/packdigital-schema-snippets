@@ -8,7 +8,7 @@
             "    label: 'Hero Heading',",
             "    description: 'Main text for Hero',",
             "    defaultValue: 'Hello world',",
-            "}"
+            "},"
         ],
         "description": "A Text field is a single text input. You can use this field for short strings such as titles, handles, or headings."
     }

@@ -2,17 +2,30 @@
   "name": "packdigital-schema-snippets",
   "displayName": "PackDigital Schema Snippets",
   "description": "Section schema API snippets, used for building sections within PackDigital x Shopify platform",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.90.0"
   },
   "categories": [
     "Snippets"
   ],
+  "publisher": "aurimas",
+  "author": {
+    "name": "Aurimas Karvelis",
+    "url": "https://github.com/aurimaskarvelis"
+  },
+  "repository": {
+    "url": "https://github.com/aurimaskarvelis/packdigital-schema-snippets",
+    "type": "git"
+  },
   "contributes": {
     "snippets": [
       {
         "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
         "path": "./snippets/snippets.code-snippets"
       }
     ]
