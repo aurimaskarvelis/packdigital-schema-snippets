@@ -3,13 +3,345 @@
         "prefix": "pack-text",
         "body": [
             "{",
-            "    component: 'text',",
-            "    name: 'heading',",
-            "    label: 'Hero Heading',",
-            "    description: 'Main text for Hero',",
-            "    defaultValue: 'Hello world',",
+            "    component: \"text\",",
+            "    name: \"heading\",",
+            "    label: \"Hero Heading\",",
+            "    description: \"Main text for Hero\",",
+            "    defaultValue: \"Hello world\",",
             "},"
         ],
-        "description": "A Text field is a single text input. You can use this field for short strings such as titles, handles, or headings."
-    }
+        "description": "A Text field is a single text input.\rYou can use this field for short strings such as titles, handles, or headings.\n\nhttps://docs.packdigital.com/section-schema-api#text-field"
+    },
+    "pack-textarea": {
+        "prefix": "pack-textarea",
+        "body": [
+            "{",
+            "    component: \"textarea\",",
+            "    name: \"faqAnswer\",",
+            "    label: \"FAQ Answer\",",
+            "    description: \"Short description for the question\",",
+            "},"
+        ],
+        "description": "A Text Area field is multi-line text input.\rYou can use this field for longer strings such as copy, descriptions, or details.\n\nhttps://docs.packdigital.com/section-schema-api#text-area-field"
+    },
+    "pack-image": {
+        "prefix": "pack-image",
+        "body": [
+            "{",
+            "    component: \"image\",",
+            "    name: \"heroImage\",",
+            "    label: \"Hero Image\",",
+            "    description: \"Image for hero banner\",",
+            "},"
+        ],
+        "description": "Select an image from the media manager.\n\nhttps://docs.packdigital.com/section-schema-api#image-field"
+    },
+    "pack-markdown": {
+        "prefix": "pack-markdown",
+        "body": [
+            "{",
+            "    component: \"markdown\",",
+            "    name: \"privacyInfo\",",
+            "    label: \"Privacy Notes\",",
+            "    description: \"Details about product's privacy details\",",
+            "},"
+        ],
+        "description": "You can use this field to write markdown text.\n\nhttps://docs.packdigital.com/section-schema-api#markdown-field"
+    },
+    "pack-link": {
+        "prefix": "pack-link",
+        "body": [
+            "{",
+            "    component: \"link\",",
+            "    name: \"linkName\",",
+            "    label: \"Our company page\",",
+            "    defaultValue: {",
+            "        text: \"Our mission\",",
+            "        url: \"/pages/about-us\"",
+            "    }",
+            "},"
+        ],
+        "description": "This field can be used to select pages in\ryour storefront or link to external sites.\n\nhttps://docs.packdigital.com/section-schema-api#link-field"
+    },
+    "pack-number": {
+        "prefix": "pack-number",
+        "body": [
+            "{",
+            "    component: \"number\",",
+            "    name: \"productCount\",",
+            "    label: \"Product Count\",",
+            "    description: \"How many products in the carousel\",",
+            "},"
+        ],
+        "description": "This field accepts a number as an input.\n\nhttps://docs.packdigital.com/section-schema-api#number-field"
+    },
+    "pack-product": {
+        "prefix": "pack-product",
+        "body": [
+            "{",
+            "    component: \"productSearch\",",
+            "    name: \"upsellProduct\",",
+            "    label: \"Upsell Product\",",
+            "    description: \"Select product to upsell\",",
+            "},"
+        ],
+        "description": "This field allows you to select a product.\n\nhttps://docs.packdigital.com/section-schema-api#product-field"
+    },
+    "pack-collection": {
+        "prefix": "pack-collection",
+        "body": [
+            "{",
+            "    component: \"collections\",",
+            "    name: \"collectionRow\",",
+            "    label: \"Collection Row\",",
+            "},"
+        ],
+        "description": "This field allows you to select a collection.\n\nhttps://docs.packdigital.com/section-schema-api#collection-field"
+    },
+    "pack-productbundles": {
+        "prefix": "pack-productbundles",
+        "body": [
+            "{",
+            "    component: \"productBundles\",",
+            "    name: \"upsellBundle\",",
+            "    label: \"Upsell Bundle\",",
+            "    description: \"Select a bundle\",",
+            "},"
+        ],
+        "description": "This field allows you to select a\rproduct bundle from Pack.\n\nhttps://docs.packdigital.com/section-schema-api#product-bundles-field"
+    },
+    "pack-html": {
+        "prefix": "pack-html",
+        "body": [
+            "{",
+            "    component: \"html\",",
+            "    name: \"markup\",",
+            "    label: \"HTML Markup\",",
+            "    description: \"HTML for content\",",
+            "    defaultValue: \"<p> Hello world! </p>\",",
+            "},"
+        ],
+        "description": "Allows you to write HTML.\n\nhttps://docs.packdigital.com/section-schema-api#html-field"
+    },
+    "pack-group": {
+        "prefix": "pack-group",
+        "body": [
+            "{",
+            "    component: \"group\",",
+            "    name: \"details\",",
+            "    label: \"Your Details\",",
+            "    description: \"Info about you\",",
+            "    fields: [",
+            "        {",
+            "            component: \"text\",",
+            "            name: \"firstName\"",
+            "        },",
+            "        {",
+            "            component: \"number\",",
+            "            name: \"age\"",
+            "        },",
+            "    ],",
+            "    defaultValue: {",
+            "        firstName: \"Andrew\",",
+            "        age: 28",
+            "    },",
+            "},"
+        ],
+        "description": "Lets you group a set of fields into\ra group of values.\n\nhttps://docs.packdigital.com/section-schema-api#group-field"
+    },
+    "pack-list": {
+        "prefix": "pack-list",
+        "body": [
+            "{",
+            "    component: \"list\",",
+            "    name: \"navLabels\",",
+            "    label: \"Navigation Labels\",",
+            "    field: {",
+            "        component: \"text\",",
+            "    },",
+            "    defaultValue: ['hello', 'world'],",
+            "},"
+        ],
+        "description": "Lets you create a list of a single field type.\rFor example, you can create a list of text fields or number fields.\n\nhttps://docs.packdigital.com/section-schema-api#list-field"
+    },
+    "pack-grouplist": {
+        "prefix": "pack-grouplist",
+        "body": [
+            "  {",
+            "    component: \"group-list\",",
+            "    name: \"friends\",",
+            "    label: \"My Friends\",",
+            "    itemProps: {",
+            "      label: \"Friend: {{item.firstName}}\"",
+            "    },",
+            "    fields: [",
+            "      {",
+            "        component: \"text\",",
+            "        name: \"firstName\",",
+            "        label: \"First Name\"",
+            "      },",
+            "      {",
+            "        component: \"text\",",
+            "        name: \"number\",",
+            "        label: \"Phone Number\"",
+            "      },",
+            "    ],",
+            "    defaultValue: [",
+            "      {",
+            "        firstName: \"John\",",
+            "        number: \"(777) 777-7777\"",
+            "      }",
+            "    ],",
+            "  },",
+            ""
+        ],
+        "description": "Lets you create a list of groups.\rFor example, you can create a list of groups that holds\ra text field, number field, and product bundle field.\n\nhttps://docs.packdigital.com/section-schema-api#group-list-field"
+    },
+    "pack-blocks": {
+        "prefix": "pack-blocks",
+        "body": [
+            "{",
+            "    component: \"blocks\",",
+            "    name: \"varietyList\",",
+            "    label: \"List Of Things\",",
+            "    templates: {",
+            "        human: {",
+            "            label: \"Human Thing\",",
+            "            key: \"human\",",
+            "            itemProps: {",
+            "                label: \"Human says : {{item.noise}}\",",
+            "            },",
+            "            fields: [",
+            "                {",
+            "                    label: \"Noise\",",
+            "                    name: \"noise\",",
+            "                    component: \"text\",",
+            "                },",
+            "            ]",
+            "        },",
+            "        cat: {",
+            "            label: \"Cat Thing\",",
+            "            key: \"cat\",",
+            "            itemProps: {",
+            "                label: \"Cat says : {{item.noise}}\",",
+            "            },",
+            "            fields: [",
+            "                {",
+            "                    label: \"Noise\",",
+            "                    name: \"noise\",",
+            "                    component: \"text\",",
+            "                },",
+            "            ]",
+            "        },",
+            "        dog: {",
+            "            label: \"Dog Thing\",",
+            "            key: \"dog\",",
+            "            itemProps: {",
+            "                label: \"Dog says : {{item.noise}}\",",
+            "            },",
+            "            fields: [",
+            "                {",
+            "                    label: \"Noise\",",
+            "                    name: \"noise\",",
+            "                    component: \"text\",",
+            "                },",
+            "            ]",
+            "        },",
+            "    }",
+            "}",
+        ],
+        "description": "Blocks is a flexible field that let you create\ra set of unique fields, making it easy to build a\rvariety of components.\rFor example, you can use them to quickly\rcreate a customizable form with different types of inputs,\ror to put together a content section with various elements\rlike images or accordions.\rThis system simplifies the process of designing\rand arranging components to suit your specific requirements.\n\nhttps://docs.packdigital.com/section-schema-api#blocks-field"
+    },
+    "pack-toggle": {
+        "prefix": "pack-toggle",
+        "body": [
+            "{",
+            "    component: \"toggle\",",
+            "    name: \"amICool\",",
+            "    label: \"Am I Cool?\",",
+            "    toggleLabels: {",
+            "        true: \"Yah\",",
+            "        false: \"Nah\",",
+            "    },",
+            "    defaultValue: false,",
+            "}",
+        ],
+        "description": "The Toggle Field is a boolean toggle.\rYou can set its value for content that needs a true and or false state.\n\nhttps://docs.packdigital.com/section-schema-api#toggle-field"
+    },
+    "pack-select": {
+        "prefix": "pack-select",
+        "body": [
+            "{",
+            "    component: 'select',",
+            "    name: 'bundleQty',",
+            "    label: 'Bundle Qty',",
+            "    options: [",
+            "        {",
+            "            label: \"One Pack\",",
+            "            value: \"one-pack-sku\"",
+            "        },",
+            "        {",
+            "            label: \"Two Pack\",",
+            "            value: \"two-pack-sku\"",
+            "        },",
+            "        {",
+            "            label: \"Three Pack\",",
+            "            value: \"three-pack-sku\"",
+            "        },",
+            "    ],",
+            "    defaultValue: \"three-pack-sku\",",
+            "},"
+        ],
+        "description": "This is a select / dropdown input field.\rIt will return the value of your selected option.\n\nhttps://docs.packdigital.com/section-schema-api#select-field"
+    },
+    "pack-radiogroup": {
+        "prefix": "pack-radiogroup",
+        "body": [
+            "{",
+            "    component: \"radio-group\",",
+            "    name: \"radioName\",",
+            "    label: \"Radio Group Field\",",
+            "    description: \"A radio field\",",
+            "    options: [",
+            "        {",
+            "            label: \"Yes\",",
+            "            value: \"yesValue\"",
+            "        },",
+            "        {",
+            "            label: \"Maybe\",",
+            "            value: \"maybeValue\"",
+            "        },",
+            "        {",
+            "            label: \"No\",",
+            "            value: \"noValue\"",
+            "        },",
+            "    ],",
+            "    defaultValue: \"maybeValue\",",
+            "},"
+        ],
+        "description": "This is a field of radio inputs.\rReturns the value of your selected option.\rThis field also has the option to be displayed\rvertically or horizontally, or as radios or buttons.\n\nhttps://docs.packdigital.com/section-schema-api#radio-group-field"
+    },
+    "pack-tags": {
+        "prefix": "pack-tags",
+        "body": [
+            "{",
+            "    component: \"tags\",",
+            "    name: \"tagsName\",",
+            "    label: \"Tags Field\",",
+            "    defaultValue: [\"default-tag-1\", \"default-tag-2\"],",
+            "},"
+        ],
+        "description": "This field will render an input where you can\rcreate tags by inputting your tag and hitting enter.\rThe return value will be an array of strings.\n\nhttps://docs.packdigital.com/section-schema-api#tags-field"
+    },
+    "pack-color": {
+        "prefix": "pack-color",
+        "body": [
+            "{",
+            "    component: \"color\",",
+            "    name: \"color\",",
+            "    label: \"Color\",",
+            "},"
+        ],
+        "description": "This field will render a color picker"
+    },
 }
